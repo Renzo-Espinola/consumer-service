@@ -1,4 +1,13 @@
 spring:
   application:
-    name: consumer-service
+    name: Qa-service
+  profiles:
+    active:
+      - Qa
+
+  cloud:
+    config:
+      server:
+        bootstrap: true
+      uri: ${SPRING_CONFIG_URI:http://localhost:8888}
 

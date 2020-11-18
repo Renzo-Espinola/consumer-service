@@ -1,9 +1,9 @@
 spring:
   application:
-    name: Qa-service
+    name: ms-service
   profiles:
     active:
-      - Qa
+      - qa
 
   cloud:
     config:

@@ -1,13 +1,16 @@
+---
 spring:
   application:
-    name: Qa-service
-  profiles:
-    active:
-      - Qa
-
+    name: ms-service
   cloud:
     config:
+      name: ms-service
+      password: admin
       server:
         bootstrap: true
-      uri: ${SPRING_CONFIG_URI:http://localhost:8888}
+      uri: "http://localhost:8090"
+      username: admin
+  profiles:
+    active:
+      - qa
 

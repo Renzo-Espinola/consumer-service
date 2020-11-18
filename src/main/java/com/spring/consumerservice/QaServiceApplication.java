@@ -14,10 +14,10 @@ import java.util.Map;
 @SpringBootApplication
 @RestController
 public class QaServiceApplication {
-    @Value("$ {message}")
+    @Value("${message}")
     private String message;
 
-    @Value("$ {global-message}")
+    @Value("${global-message}")
     private String globalMessage;
 
     @RequestMapping(method = RequestMethod.GET)
